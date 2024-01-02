@@ -291,7 +291,7 @@ serverAddress = "news.brain.run"
 # - Open the browser
 
 # Default: whatever value is set in server.port.
-# serverPort = 8501
+serverPort = 443
 
 
 [mapbox]
