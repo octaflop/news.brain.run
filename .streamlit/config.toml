@@ -213,7 +213,7 @@ toolbarMode = "viewer"
 # The base path for the URL where Streamlit should be served from.
 
 # Default: ""
-# baseUrlPath = ""
+baseUrlPath = "https://news.brain.run/"
 
 # Enables support for Cross-Origin Resource Sharing (CORS) protection, for added security.
 
