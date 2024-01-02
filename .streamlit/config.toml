@@ -71,7 +71,7 @@
 # Streamlit displays app exceptions and associated tracebacks, and
 # deprecation warnings, in the browser.
 
-# If set to False, deprecation warnings and full exception messages
+# If set to false, deprecation warnings and full exception messages
 # will print to the console only. Exceptions will still display in the
 # browser with a generic error message. For now, the exception type and
 # traceback show in the browser also, but they will be removed in the
@@ -94,7 +94,7 @@ showErrorDetails = false
 # If there are no options left, hide the menu.
 
 # Default: "auto"
-toolbarMode = "viewer"
+toolbarMode = "auto"
 
 
 [runner]
@@ -221,7 +221,7 @@ baseUrlPath = ""
 # `server.enableCORS` is off at the same time, we will prioritize `server.enableXsrfProtection`.
 
 # Default: true
-enableCORS = false
+enableCORS = true
 
 # Enables support for Cross-Site Request Forgery (XSRF) protection, for added security.
 
@@ -229,7 +229,7 @@ enableCORS = false
 # `server.enableCORS` is off at the same time, we will prioritize `server.enableXsrfProtection`.
 
 # Default: true
-# enableXsrfProtection = true
+ enableXsrfProtection = true
 
 # Max size, in megabytes, for files uploaded with the file_uploader.
 
@@ -275,7 +275,7 @@ enableCORS = false
 # - Open the browser
 
 # Default: "localhost"
-serverAddress = "news.brain.run"
+# serverAddress = "news.brain.run"
 
 # Whether to send usage statistics to Streamlit.
 
@@ -291,7 +291,7 @@ serverAddress = "news.brain.run"
 # - Open the browser
 
 # Default: whatever value is set in server.port.
-serverPort = 443
+# serverPort = 443
 
 
 [mapbox]
