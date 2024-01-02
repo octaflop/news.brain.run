@@ -7,34 +7,23 @@
     <!-- Begin Social Media Preview Meta -->
     <meta property="og:title" content="📰🧠🏃🏽‍♂️💨 | news.brain.run">
     <meta property="og:description" content="A one stop web portal for summarised academic articles.">
-    <meta property="og:image" content="imgs/brainrunlogo.png">
+    <meta property="og:image" content="assets/brainrunlogo.png">
     <meta property="og:url" content="https://news.brain.run">
     <meta name="twitter:card" content="summary_large_image">
     <!-- End Social Media Preview Meta -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"/>
-
-    <style>
-        iframe {
-            display: block;
-            width: 100%;
-            border: none;
-            overflow-y: auto;
-            overflow-x: hidden;
-            height: 100vh;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-        }
-        @media (min-width: 768px) {
-            .container {
-                flex-direction: row;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+<nav>
+    <div id="left-nav">
+        <h1><a href="https://news.brain.run">📰🧠🏃🏽‍♂️💨 | news.brain.run</a></h1>
+    </div>
+    <div id="right-nav">
+        More demos at <a href="https://faris.ai">faris.ai</a>
+    </div>
+</nav>
 <div class="container">
     <div class="main-content">
         <main>
@@ -51,18 +40,24 @@
     <div class="annotations">
         <h4>What is this?</h4>
         <p>
-            <code>news.brain.run</code> is an experiment in which I have run a data-orchestration pipeline against the <a
-                href="https://info.arxiv.org/help/rss.html">arVix.org feed</a> of the latest articles published in the new
-            (November 2023) <a href="https://info.arxiv.org/about/accessible_HTML.html">Accessible HTML format</a> and have
+            <code>news.brain.run</code> is an experiment in which I have run a data-orchestration pipeline against the
+            <a
+                    href="https://info.arxiv.org/help/rss.html">arVix.org feed</a> of the latest articles published in
+            the new
+            (November 2023) <a href="https://info.arxiv.org/about/accessible_HTML.html">Accessible HTML format</a> and
+            have
             feed this pipeline into a number of bespoke LLM summarization chains. I then feed these into a <a
                 href="https://duckdb.org/">duckdb database</a> which is pulled into this display by <a
                 href="https://streamlit.io/">streamlit.io</a>.
         </p>
         <h4>I still don't get it, would you kindly explain this to me?</h4>
         <p>
-            Basically I gathered a bunch o' academic articles, threw a robot at it to summarize it for me, then published
-            those summaries here. The robots take a bit to figure out these articles because I ask them a lot of questions,
-            so I set it up so the robots can do this stuff in the background. All of this is pretty inexpensive and I hope
+            Basically I gathered a bunch o' academic articles, threw a robot at it to summarize it for me, then
+            published
+            those summaries here. The robots take a bit to figure out these articles because I ask them a lot of
+            questions,
+            so I set it up so the robots can do this stuff in the background. All of this is pretty inexpensive and I
+            hope
             to make a cheap little robot for anyone to learn how stuff works.
         </p>
     </div>
