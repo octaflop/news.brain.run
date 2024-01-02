@@ -78,7 +78,7 @@
 # future.
 
 # Default: true
-# showErrorDetails = true
+showErrorDetails = false
 
 # Change the visibility of items in the toolbar, options menu,
 # and settings dialog (top right of the app).
@@ -94,7 +94,7 @@
 # If there are no options left, hide the menu.
 
 # Default: "auto"
-# toolbarMode = "auto"
+toolbarMode = "viewer"
 
 
 [runner]
